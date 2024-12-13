@@ -1,0 +1,25 @@
+[package]
+name = "transferdemo"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "transferdemo"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token = "4.0.1"
+solana-program = "1.18.16"
+pyth-client = "0.2.2"
+bytemuck = "1.16.0"
+
